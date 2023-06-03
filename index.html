@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-2.css">
+    <title>Navbar</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+        <h2 class="logo">Logo <span>Here</span></h2>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+        <button type="button">Contact</button>
+        <img class="menu" id="menu-hamburger" src="images/menu.png" alt="">
+    </nav>
+</div>
+</body>
+<script>
+    const menuHamburger = document.getElementById("menu-hamburger")
+    const navLinks = document.getElementById("nav-links")
+    menuHamburger.addEventListener("click", function() {
+        if (navLinks.style.display === "none") {
+            navLinks.style.display = "flex";
+        } else {
+            navLinks.style.display = "none";
+        }
+    });
+</script>
+</html>
